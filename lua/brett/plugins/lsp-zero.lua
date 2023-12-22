@@ -30,9 +30,12 @@ return {
             -- And you can configure cmp even more, if you want to.
             local cmp = require('cmp')
             local cmp_action = lsp_zero.cmp_action()
+
+            local cmp_autopairs = require('nvim-autopairs.completion.cmp')
             cmp.event:on(
                 'confirm_done',
                 cmp_autopairs.on_confirm_done()
+
             )
             cmp.setup({
                 formatting = lsp_zero.cmp_format(),
