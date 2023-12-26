@@ -1,7 +1,8 @@
 return {
-    'rose-pine/neovim', name = 'rose-pine',
+--  'rose-pine/neovim',
+    'rebelot/kanagawa.nvim',
     lazy = false,
     config = function()
-        vim.cmd.colorscheme('rose-pine')
+        vim.cmd.colorscheme('kanagawa-dragon')
     end
 }
