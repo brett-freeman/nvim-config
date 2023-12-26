@@ -12,22 +12,10 @@ return {
                 highlight = { enable = true },
                 indent = { enable = true },
 
-                incremental_selection = {
-                    enable = true,
-                    keymaps = {
-                        init_selection = '<leader>ss',
-                        node_incremental = '<leader>si',
-                        scope_incremental = '<leader>sc',
-                        node_decremental = '<leader>sd',
-                    },
-                },
-
                 textobjects = {
                     select = {
                         enable = true,
-
                         lookahead = true,
-
                         keymaps = {
                             ["af"] = "@function.outer",
                             ["if"] = "@function.inner",
