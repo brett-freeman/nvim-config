@@ -13,4 +13,11 @@ return {
 --            vim.cmd.colorscheme 'rose-pine'
         end
     },
+    {
+        'folke/tokyonight.nvim', name = 'tokyonight',
+        lazy = false,
+        config = function()
+--            vim.cmd.colorscheme 'tokyonight-night'
+        end
+    }
 }
