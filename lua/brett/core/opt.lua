@@ -27,7 +27,7 @@ vim.opt.signcolumn = "yes"
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = ""
+vim.opt.colorcolumn = "120"
 
 vim.o.autoread = true
 vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGained" }, {
