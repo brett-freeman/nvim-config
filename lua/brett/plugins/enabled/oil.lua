@@ -3,6 +3,7 @@ return {
 
     config = function()
         require('oil').setup({
+            default_file_explorer = true,
             keymaps = {
                 ["g?"] = "actions.show_help",
                 ["<CR>"] = "actions.select",
@@ -10,7 +11,8 @@ return {
                 ["<C-h>"] = "actions.select_split",
                 ["<C-t>"] = "actions.select_tab",
                 ["<C-p>"] = "actions.preview",
-                ["<Esc>"] = "actions.close",
+                ["q"] = "actions.close",
+                ["<C-c>"] = "actions.close",
                 ["<leader>e"] = "actions.close",
                 ["<C-l>"] = "actions.refresh",
                 ["-"] = "actions.parent",
@@ -21,20 +23,6 @@ return {
                 ["gx"] = "actions.open_external",
                 ["g."] = "actions.toggle_hidden",
                 ["g\\"] = "actions.toggle_trash",
-            },
-            default_file_explorer = true,
-            float = {
-                -- Padding around the floating window
-                padding = 2,
-                max_width = 0,
-                max_height = 0,
-                border = "rounded",
-                win_options = {
-                    winblend = 0,
-                },
-                override = function(conf)
-                    return conf
-                end,
             },
         })
 
